@@ -3,7 +3,7 @@
 $macaddress = escapeshellarg($_POST['mac']);
 $method = escapeshellarg($_POST['method']);
 
-$command = escapeshellcmd("python3 network_config.py $mac $method");
+$command = escapeshellcmd("python3 network_config.py $macaddress $method");
 
 $output = shell_exec($command);
 
